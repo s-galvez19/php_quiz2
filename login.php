@@ -17,7 +17,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /Php_quiz");
+      header("Location: /php_quiz2");
     } else {
       $message = 'Sorry, those credentials do not match';
     }
